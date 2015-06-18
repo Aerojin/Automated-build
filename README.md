@@ -70,6 +70,10 @@ constant	- 常量配置
 
 config_js.json配置文件
 ```
+merge  		是否合并
+compress	是否压缩
+name		合并后输出的文件名
+src		源文件路径
 {
 	"libs": {
 		"merge": true,
