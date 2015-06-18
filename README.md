@@ -9,7 +9,7 @@
 
 #配置
 config.json 项目配置文件
-'{
+`{
 	"project": {
 		"name":	"activity",
 		"out_path": "./static/",
@@ -46,4 +46,4 @@ config.json 项目配置文件
 		"CSS_COFIG_PATH": "./config_css.json"
 	}
 	
-}'
+}`
