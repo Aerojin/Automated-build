@@ -9,7 +9,13 @@
 
 #配置
 config.json 项目配置文件  
-```	    
+```
+/*  
+project		-> 项目配置
+	
+path		-> 路径配置
+constant	- 常量配置
+*/
 {
 	"project": {
 		"name":	"activity",
