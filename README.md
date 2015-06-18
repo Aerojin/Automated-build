@@ -9,7 +9,7 @@
 
 #配置
 config.json 项目配置文件  
-'	    
+'''	    
 {
 	"project": {
 		"name":	"activity",
@@ -48,4 +48,4 @@ config.json 项目配置文件
 	}
 	
 }
-'	    
+'''	    
