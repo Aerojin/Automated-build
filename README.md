@@ -8,7 +8,7 @@
 4.配置文件  
 
 #配置
-config.json 项目配置文件
+config.json 项目配置文件  
 `{
 	"project": {
 		"name":	"activity",
