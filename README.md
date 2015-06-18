@@ -15,14 +15,17 @@ project		-> 项目配置
 	name		->项目名称
 	out_path	->开发时输出路径
 	release_path	->发布时输出路径
+	
 path		-> 路径配置
 	js_path		-> js配置路径
 		source		-> 源文件路径
 		out		-> 开发模式输出路径
 		release		-> 发布时输出路径
+		
 	css_path	-> css配置路径
 	html_path	-> html配置
 	img_path	-> image配置路径
+	
 constant	- 常量配置
 */
 {
