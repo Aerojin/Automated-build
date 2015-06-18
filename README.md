@@ -66,4 +66,38 @@ constant	- 常量配置
 	}
 	
 }
-```	    
+```
+
+config_js.json配置文件
+```
+{
+	"libs": {
+		"merge": true,
+		"compress": false,
+		"name": "libs.pack.js",
+		"src": [
+			"./js/lib/zepto.min.js"
+		]
+	},
+	"base": {
+		"merge": true,
+		"compress": true,
+		"name": "xn.base.pack.js",
+		"src": [
+			"./js/base/xn.core.js",
+			"./js/base/xn.string.js",
+			"./js/base/xn.kit.js",
+			"./js/base/xn.http.client.js",
+			"./js/base/xn.browser.js"
+		]
+	},
+	"api": {
+		"merge": true,
+		"compress": true,
+		"name": "xn.api.pack.js",
+		"src": [
+			"./js/api/xn.api.js"
+		]
+	}
+}
+```
