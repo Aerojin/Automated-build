@@ -1,0 +1,22 @@
+{
+	"libs": {
+		"merge": true,
+		"compress": false,
+		"name": "libs.pack.js",
+		"src": [
+			"./js/lib/zepto.min.js"
+		]
+	},
+	"base": {
+		"merge": true,
+		"compress": true,
+		"name": "xn.base.pack.js",
+		"src": [
+			"./js/base/xn.core.js",
+			"./js/base/xn.string.js",
+			"./js/base/xn.kit.js",
+			"./js/base/xn.http.client.js",
+			"./js/base/xn.browser.js"
+		]
+	}
+}

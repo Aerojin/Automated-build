@@ -1,0 +1,51 @@
+@charset "utf-8";
+/*格式化*/
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td, span, input, textarea {margin:0;padding:0;}
+body{ font-size:14px;font-family:"Microsoft Yahei",Verdana,Arial,Helvetica,sans-serif;  background:#f2f2f2;} 
+li, ol { list-style:none; }
+ins { text-decoration:none; }
+i, em { font-style:normal; }
+a { text-decoration:none;font-family:"Microsoft Yahei";}
+a:hover { cursor:pointer; text-decoration:none;}f2f2f2
+a:active{star:expression(this.onFocus=this.blur());}
+:focus{outline:0;}
+.clear { clear:both; line-height:0px; overflow:hidden; zoom:1; font-size:0px; content:'.';}
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+img{ padding:0; margin:0;}
+a img { border:none; }
+input,textarea{ border:none;font-family:"Microsoft Yahei"; }
+h1, h2, h3, h4, h5, h6{ font-weight:normal; font-size:14px;}
+/*排版通用*/
+.f-mm{ margin-left:auto; margin-right:auto;}/*居中对齐*/
+.f-fl{ float:left;} /*左浮动*/
+.f-fr{ float:right;} /*右浮动*/
+.f-tr{ text-align:right;} /*右对齐*/
+.f-tl{ text-align:left;} /*左对齐*/
+.f-tc{ text-align:center;} /*中间对齐*/
+.f-pr{ position:relative;} /*定位*/
+.f-di{ display:inline;}
+/* -- 页面整体布局 -- */
+.wrap{min-width:320px;max-width:640px; margin:0 auto; overflow:hidden; position:relative;padding-bottom: 1%;}
+
+
+
+@media screen and (min-width:320px) {
+	body { font-size:75%;}
+}
+@media screen and (min-width:360px) {
+	body { font-size:86.5%;}
+}
+@media screen and (min-width:400px) {
+	body { font-size:93%;}
+}
+@media screen and (min-width:480px) {
+	body { font-size:112%;}
+
+}
+@media screen and (min-width:568px) {
+	body { font-size:131%;}
+
+}
+@media screen and (min-width:639px) {
+	body { font-size:150%;}
+}

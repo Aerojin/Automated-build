@@ -1,0 +1,11 @@
+{
+	"style": {
+		"merge": true,
+		"compress": false,
+		"name": "style.pack.css",
+		"src": [
+			"./css/common.css",
+			"./css/style.css"
+		]
+	}
+}
