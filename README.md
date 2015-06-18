@@ -2,14 +2,14 @@
 基于gulp的自动化构建
 
 #安装
-1.下载安装node
-2.克隆Automated-build项目
-3.安装项目中所有的插件
-4.配置文件
+1.下载安装node  
+2.克隆Automated-build项目  
+3.安装项目中所有的插件  
+4.配置文件  
 
 #配置
 config.json 项目配置文件
-`{
+'{
 	"project": {
 		"name":	"activity",
 		"out_path": "./static/",
@@ -46,5 +46,4 @@ config.json 项目配置文件
 		"CSS_COFIG_PATH": "./config_css.json"
 	}
 	
-}
-`
+}'
