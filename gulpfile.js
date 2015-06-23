@@ -116,7 +116,7 @@ var pack = {
 		var path = this.path["html_path"];
 
 		for(var i = 0; i < path.length; i++){
-			var outPath = isRelease ? path[i].release : path[i].out;
+			var outPath = this.getPath(path[i].out_path);
 
 			gulp.src(path[i].source + '*.html')
 			.pipe(replace(js_reg, function (a, b){
@@ -132,7 +132,7 @@ var pack = {
 		var path = this.path["css_path"];
 
 		for(var i = 0; i < path.length; i++){
-			var outPath = isRelease ? path[i].release : path[i].out;
+			var outPath = this.getPath(path[i].out_path);
 
 			for(var key in this.cssConfig){
 				var options = this.cssConfig[key];
@@ -151,7 +151,7 @@ var pack = {
 		var path = this.path["js_path"];
 
 		for(var i = 0; i < path.length; i++){
-			var outPath = isRelease ? path[i].release : path[i].out;
+			var outPath = this.getPath(path[i].out_path);
 
 			for(var key in this.jsConfig){
 				var options = this.jsConfig[key];
@@ -170,11 +170,14 @@ var pack = {
 		var path = this.path["img_path"];
 
 		for(var i = 0; i < path.length; i++){
-			var outPath = isRelease ? path[i].release : path[i].out;
+			var outPath = this.getPath(path[i].out_path);
 
 			gulp.src(path[i].source + '*.*')
 				.pipe(gulp.dest(outPath));
 		}
+	},
+	getPath: function (path) {
+		return this.config.project["out_path"] + path;
 	}
 };
 
@@ -213,16 +216,14 @@ gulp.task('default', ["clean"], function() {
 	tack.develop();
 });
 
-gulp.task('release', ["clean"], function () {
+gulp.task('release',  function () {
 	tack.release();
-
 });
 
 gulp.task('clean', function(cb) {
 	var outPath = pack.config.project["out_path"];
-	var releasePath = pack.config.project["release_path"];
-
-    del([outPath, releasePath], cb)
+	
+	del([outPath], cb);
 });
 
 //打包主体build 文件夹并按照时间重命名
@@ -236,9 +237,9 @@ gulp.task('zip', function(){
     var hour = common.checkTime(d.getHours());
     var minute = common.checkTime(d.getMinutes());
 
-  	return gulp.src(project["release_path"] + "**")
+  	return gulp.src(project["out_path"] + "**")
         .pipe(zip(project["name"] + '-' + year + month + day + hour + minute + '.zip'))
-    	.pipe(gulp.dest(project["release_path"]));
+    	.pipe(gulp.dest(project["out_path"]));
 });
 
 

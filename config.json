@@ -1,33 +1,27 @@
 {
 	"project": {
-		"name":	"activity",
-		"out_path": "./static/",
-		"release_path": "./release/"
+		"name":	"webchat",
+		"out_path": "../root/user/"
 	},
 	"path": {
 		"js_path": [{
 			"source": "./js/",
-			"out": "./static/js/",
-			"release": "./release/js/"
+			"out_path": "js/"
 		}],
 		"css_path": [{
 			"source": "./css/",
-			"out": "./static/css/",
-			"release": "./release/css/"
+			"out_path": "css/"
 		}],
 		"html_path": [{
 			"source": "./html/",
-			"out": "./static/",
-			"release": "./release/"
+			"out_path": ""
 		}],
 		"img_path": [{
-			"source": "./image/",
-			"out": "./static/image/",
-			"release": "./release/image/"
+			"source": "./images/",
+			"out_path": "images/"
 		},{
 			"source": "./img/",
-			"out": "./static/img/",
-			"release": "./release/img/"
+			"out_path": "img/"
 		}]
 	},
 	"constant": {
